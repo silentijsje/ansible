@@ -1,0 +1,5 @@
+- import_playbook: apt.yml
+- import_playbook: timezone.yml
+- import_playbook: zsh.yml
+- import_playbook: qemu-guest-agent.yml
+- import_playbook: docker.yml
