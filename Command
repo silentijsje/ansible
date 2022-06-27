@@ -1,1 +1,0 @@
-ansible-playbook ./playbooks/timezone.yml --user gamer0308 -i ./inventory/hosts
