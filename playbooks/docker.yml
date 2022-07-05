@@ -1,6 +1,5 @@
-- hosts: all
+- hosts: docker_server
   become: yes
-  gather_facts: false
   tasks:
   - name: Install docker packages
     remote_user: gamer0308
