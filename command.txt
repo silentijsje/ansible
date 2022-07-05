@@ -1,1 +1,4 @@
 ansible-playbook ./playbooks/timezone.yml --user gamer0308 -i ./inventory/hosts
+
+sudo chown -R 1000:1000 /opt/*; chmod -R 777 /opt/*
+chmod 600 /opt/treafik/acme.json
