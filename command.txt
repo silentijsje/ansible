@@ -1,4 +1,13 @@
-ansible-playbook ./playbooks/timezone.yml --user gamer0308 -i ./inventory/hosts
+Running ansible script:
+ansible-playbook ./playbooks/timezone.yml
 
+Docker folder permissions:
 sudo chown -R 1000:1000 /opt/*; chmod -R 777 /opt/*
 chmod 600 /opt/treafik/acme.json
+
+copy specific SSH key:
+ssh-copy-id -i ~/.ssh/ansible.pub 10.0.0.50
+
+mounting share /etc/fstab:
+//10.0.0.93/volatile /mnt/volatile cifs credentials=/root/smbcredentials,uid=1000,gid=1000 0 0
+//10.0.0.93/volatile /mnt/volatile cifs credentials=/root/smbcredentials,noperm 0 0
